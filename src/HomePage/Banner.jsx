@@ -30,7 +30,7 @@ const Banner = () => {
                 </div>
                 <div className='text-center md:text-right space-y-10'>
                     <p className='text-3xl text-white'>Hi ! I'm a Web Developer</p>
-                    <p className='text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
+                    <p className='text-5xl md:text-5xl lg:text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
                     <p className='text-xl text-[#D26E3C]'>Transforming Dreams into Digital Reality <br />
                         Where Imagination Meets Innovation</p>
                     <div className='md:flex justify-end space-x-10'>
