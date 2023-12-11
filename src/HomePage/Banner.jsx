@@ -35,7 +35,7 @@ const Banner = () => {
                     <p className='text-xl text-[#D26E3C]'>Transforming Dreams into Digital Reality <br />
                         Where Imagination Meets Innovation</p>
                     <div className='md:flex justify-end space-x-10 pb-2'>
-                        <a href="./logo.png" download>
+                        <a href="./Masum-Billlah's-Professional-CV-Resume.pdf" download>
                             <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
                                 <FaCloudDownloadAlt></FaCloudDownloadAlt>
                                 <p>Download CV</p>

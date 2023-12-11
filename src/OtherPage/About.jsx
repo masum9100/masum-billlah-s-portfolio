@@ -11,6 +11,7 @@ import { SiNextdotjs } from "react-icons/si";
 import Marquee from "react-fast-marquee";
 import { FaNodeJs } from "react-icons/fa";
 import { SiAxios } from "react-icons/si";
+import { Helmet } from 'react-helmet';
 
 const About = () => {
     return (
@@ -275,6 +276,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Helmet>
+                <title>Billh Bytes | About Me</title>
+            </Helmet>
         </div>
     );
 };
