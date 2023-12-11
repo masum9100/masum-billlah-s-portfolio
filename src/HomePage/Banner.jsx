@@ -12,7 +12,7 @@ const Banner = () => {
         }}>
             {/*  */}
             <div className='max-w-screen-xl mx-auto'>
-                <div className="navbar pt-10 max-w-screen-xl ">
+                <div className="navbar pt-10 max-w-screen-xl flex justify-between">
                     <div className="navbar-start">
                         <a href=""><img src="./logo.png" alt="" className='h-20' /></a>
                     </div>
@@ -34,7 +34,7 @@ const Banner = () => {
                     <p className='text-xl text-[#D26E3C]'>Transforming Dreams into Digital Reality <br />
                         Where Imagination Meets Innovation</p>
                     <div className='md:flex justify-end space-x-10'>
-                        <a href="https://www.linkedin.com/in/masum-billah-0a38b915b/" target='_blank'>
+                        <a href="./logo.png" download>
                             <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
                                 <FaCloudDownloadAlt></FaCloudDownloadAlt>
                                 <p>Download CV</p>

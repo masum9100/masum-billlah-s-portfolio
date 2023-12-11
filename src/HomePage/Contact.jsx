@@ -26,7 +26,7 @@ const Contact = () => {
                     <form className='space-y-5'>
                         <div>
                             <p className='text-xl font-bold mb-2'>Name</p>
-                            <input type="text" name="" id="" placeholder='Megan Fox' className='w-full border-b-[1px] rounded-xl border-[#D26E3C] py-3 px-3'/>
+                            <input type="text" name="" id="" placeholder='Megan Fox' className='w-full  rounded-xl border-b-[1px] border-[#D26E3C]  py-3 px-3'/>
                         </div>
                         <div>
                             <p className='text-xl font-bold mb-2'>Email</p>
