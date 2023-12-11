@@ -11,7 +11,7 @@ import { SiNextdotjs } from "react-icons/si";
 const Skills = () => {
     return (
         <div>
-            <div className='mt-10' style={{
+            <div className='mt-16' style={{
                 backgroundImage: "url(https://i.ibb.co/h19VqSC/SKIL-BG.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -55,7 +55,7 @@ const Skills = () => {
 
                             </div>
                             <div className='w-full '>
-                                <ProgressBar completed={85} bgColor='#D26E3C' />
+                                <ProgressBar completed={80} bgColor='#D26E3C' />
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Skills = () => {
                                 <FaReact className='text-xl'></FaReact>
                             </div>
                             <div className='w-full '>
-                                <ProgressBar completed={90} bgColor='#D26E3C' />
+                                <ProgressBar completed={85} bgColor='#D26E3C' />
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ const Skills = () => {
                                 <SiNextdotjs className='text-xl'></SiNextdotjs>
                             </div>
                             <div className='w-full '>
-                                <ProgressBar completed={79} bgColor='#D26E3C' />
+                                <ProgressBar completed={75} bgColor='#D26E3C' />
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const Skills = () => {
                                 <DiMongodb className='text-xl'></DiMongodb>
                             </div>
                             <div className='w-full '>
-                                <ProgressBar completed={83} bgColor='#D26E3C' />
+                                <ProgressBar completed={80} bgColor='#D26E3C' />
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ const Skills = () => {
                                 <SiWebflow className='text-xl'></SiWebflow>
                             </div>
                             <div className='w-full '>
-                                <ProgressBar completed={73} bgColor='#D26E3C' />
+                                <ProgressBar completed={60} bgColor='#D26E3C' />
                             </div>
                         </div>
                     </div>

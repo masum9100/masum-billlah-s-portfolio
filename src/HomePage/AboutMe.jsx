@@ -3,7 +3,7 @@ import React from 'react';
 const AboutMe = () => {
     return (
         <div>
-            <div className='mt-10' style={{
+            <div className='mt-16' style={{
                 backgroundImage: "url(https://i.ibb.co/Z2f26Wq/aa.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
