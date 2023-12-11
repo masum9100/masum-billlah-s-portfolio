@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin } from "react-icons/fa6";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -12,13 +13,13 @@ const Banner = () => {
         }}>
             {/*  */}
             <div className='max-w-screen-xl mx-auto'>
-                <div className="navbar pt-10 max-w-screen-xl flex justify-between">
+                <div className="navbar pt-10 max-w-screen-xl flex justify-between items-center px-2">
                     <div className="navbar-start">
-                        <a href=""><img src="./logo.png" alt="" className='h-20' /></a>
+                        <NavLink to={'/'}><a href=""><img src="./logo.png" alt="" className='h-20' /></a></NavLink>
                     </div>
 
                     <div className="navbar-end">
-                        <button className='bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white '>Projects</button>
+                        <NavLink to={'/projects'}><button className='bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white '>Projects</button></NavLink>
                     </div>
                 </div>
             </div>
@@ -33,7 +34,7 @@ const Banner = () => {
                     <p className='text-5xl md:text-5xl lg:text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
                     <p className='text-xl text-[#D26E3C]'>Transforming Dreams into Digital Reality <br />
                         Where Imagination Meets Innovation</p>
-                    <div className='md:flex justify-end space-x-10'>
+                    <div className='md:flex justify-end space-x-10 pb-2'>
                         <a href="./logo.png" download>
                             <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
                                 <FaCloudDownloadAlt></FaCloudDownloadAlt>

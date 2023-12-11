@@ -4,6 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -12,12 +13,12 @@ const Footer = () => {
 
 
             <footer className="bg-gradient-to-t from-[#D26E3C] to-white dark:bg-gray-900">
-                <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div className="mx-auto w-full max-w-screen-xl p-2 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
-                            <a href="" className="flex items-center">
+                            <NavLink to={'/'}><a href="" className="flex items-center">
                                 <img src="./logo.png" className="h-16 me-3" alt="FlowBite Logo" />
-                            </a>
+                            </a></NavLink>
                             <p className='mt-4 font-semibold'>HTML for structure, CSS for style, <br />JavaScript for magic, React for wizardry. <br /> Building the web, one line at a time.</p>
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -26,10 +27,10 @@ const Footer = () => {
                                 <h2 className="mb-6 text-base font-bold uppercase dark:text-white">Company</h2>
                                 <ul className=" dark:text-gray-400 font-medium">
                                     <li className="mb-4">
-                                        <a href="" className="hover:underline ">About</a>
+                                        <NavLink to={'/about-me'}><a href="" className="hover:underline ">About</a></NavLink>
                                     </li>
                                     <li>
-                                        <a href="" className="hover:underline">Projects</a>
+                                        <NavLink to={'/projects'}><a href="" className="hover:underline">Projects</a></NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -37,10 +38,10 @@ const Footer = () => {
                                 <h2 className="mb-6 text-base font-bold uppercase dark:text-white">Contact</h2>
                                 <ul className=" dark:text-gray-400 font-medium">
                                     <li className="mb-4">
-                                        <a href="mailto:masum.seopro@gmail.com" className="hover:underline ">masum.seopro@gmail.com</a>
+                                        <a href="mailto:masum.seopro@gmail.com" className="hover:underline ">Email Me</a>
                                     </li>
                                     <li>
-                                        <a href="tel:+8801713789711" className="hover:underline">+880 1713 789 711</a>
+                                        <a href="tel:+8801713789711" className="hover:underline">Call Me</a>
                                     </li>
                                 </ul>
                             </div>
