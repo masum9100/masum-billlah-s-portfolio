@@ -19,34 +19,34 @@ const Experiences = () => {
             {/*  */}
             <div className='max-w-screen-xl mx-auto px-2 mt-10 space-y-10'>
                 {/*  */}
-                <div className='flex justify-between border-b-2 border-[#D26E3C]'>
+                <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
                     <div>
-                        <p className='text-3xl font-bold'>Executive Officer <span className='text-sm font-bold text-[#D26E3C]'>/VieGenius Inc.</span></p>
+                        <p className='text-3xl font-bold'>Executive Officer <span className='text-sm font-bold text-[#D26E3C]'>/VirGenius Inc.</span></p>
                     </div>
                     <div>
                         <p className='text-2xl'>Jan 2022-Present</p>
                     </div>
                 </div>
                 {/*  */}
-                <div className='flex justify-between border-b-2 border-[#D26E3C]'>
+                <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
                     <div>
-                        <p className='text-3xl font-bold'>Sr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'>/VieGenius Inc.</span></p>
+                        <p className='text-3xl font-bold'>Sr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'>/VirGenius Inc.</span></p>
                     </div>
                     <div>
                         <p className='text-2xl'>Nov 2019-Dec 2022</p>
                     </div>
                 </div>
                 {/*  */}
-                <div className='flex justify-between border-b-2 border-[#D26E3C]'>
+                <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
                     <div>
-                        <p className='text-3xl font-bold'>Jr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'>/VieGenius Inc.</span></p>
+                        <p className='text-3xl font-bold'>Jr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'>/VirGenius Inc.</span></p>
                     </div>
                     <div>
                         <p className='text-2xl'>Dec 2017-Oct 2019</p>
                     </div>
                 </div>
                 {/*  */}
-                <div className='flex justify-between border-b-2 border-[#D26E3C]'>
+                <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
                     <div>
                         <p className='text-3xl font-bold'>Jr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'> /Stylish Garments</span></p>
                     </div>
@@ -55,7 +55,7 @@ const Experiences = () => {
                     </div>
                 </div>
                 {/*  */}
-                <div className='flex justify-between border-b-2 border-[#D26E3C]'>
+                <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
                     <div>
                         <p className='text-3xl font-bold'>Success Coach <span className='text-sm font-bold text-[#D26E3C]'>/Empower</span></p>
                     </div>
