@@ -10,8 +10,8 @@ import { SiNextdotjs } from "react-icons/si";
 
 const Skills = () => {
     return (
-        <div>
-            <div className='mt-16' style={{
+        <div className='my-16'>
+            <div className='' style={{
                 backgroundImage: "url(https://i.ibb.co/h19VqSC/SKIL-BG.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",

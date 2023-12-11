@@ -3,8 +3,8 @@ import { MdDoubleArrow } from "react-icons/md";
 
 const Services = () => {
     return (
-        <div>
-            <div className='mt-16' style={{
+        <div className='my-16'>
+            <div className='' style={{
                 backgroundImage: "url(https://i.ibb.co/zQ2zRBv/service-bg.png)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
