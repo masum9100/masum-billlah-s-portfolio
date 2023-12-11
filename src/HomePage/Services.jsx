@@ -22,7 +22,7 @@ const Services = () => {
                 <div className='w-96 md:w-80 lg:w-96 space-y-1'>
                     <img src="https://i.ibb.co/QPzyHkN/web-development.gif" alt="" />
                     <p className='text-xl font-bold text-center'>Web Development</p>
-                    <p className='text-md text-justify'>We excel in bringing digital visions to life through expert web development that combines functionality with aesthetics. Our dedicated team is skilled in creating responsive and dynamic websites, tailored to meet the unique goals of each project. By staying at the forefront of emerging technologies and design trends, we deliver cutting-edge online experiences that leave a lasting impact.</p>
+                    <p className='text-md text-justify'>I excel in bringing digital visions to life through expert web development that combines functionality with aesthetics. My dedicated team is skilled in creating responsive and dynamic websites, tailored to meet the unique goals of each project. By staying at the forefront of emerging technologies and design trends, I deliver cutting-edge online experiences that leave a lasting impact.</p>
                     <div className='flex flex-wrap gap-2'>
                         <div>
                             <div className='flex gap-1 items-center font-semibold'>
@@ -60,7 +60,7 @@ const Services = () => {
                 <div className='w-96 md:w-80 lg:w-96 space-y-1'>
                     <img src="https://i.ibb.co/gRJK3hF/ui-ux.gif" alt="" />
                     <p className='text-xl font-bold text-center'>UI & UX Design</p>
-                    <p className='text-md text-justify'>Our innovative approach ensures that every interaction is thoughtfully designed, resulting in meaningful connections between users and technology. With a focus on inclusivity and accessibility, we create designs that resonate with diverse audiences, setting new standards in the realm of UI/UX.</p>
+                    <p className='text-md text-justify'>My innovative approach ensures that every interaction is thoughtfully designed, resulting in meaningful connections between users and technology. With a focus on inclusivity and accessibility, I create designs that resonate with diverse audiences, setting new standards in the realm of UI/UX.</p>
                     <div className='flex flex-wrap gap-2'>
                         <div>
                             <div className='flex gap-1 items-center font-semibold'>
@@ -88,7 +88,7 @@ const Services = () => {
                 <div className='w-96 md:w-80 lg:w-96 space-y-1'>
                     <img src="https://i.ibb.co/bv3mj6z/Digital-marketing.gif" alt="" />
                     <p className='text-xl font-bold text-center'>Back Office Support</p>
-                    <p className='text-md text-justify'>With years of experience and a passion for efficiency, our team is dedicated to managing the essential tasks that keep your business running smoothly behind the scenes. We take pride in our commitment to excellence, ensuring that your back office operations are in capable hands, allowing you to focus on what you do best.</p>
+                    <p className='text-md text-justify'>With years of experience and a passion for efficiency, my team is dedicated to managing the essential tasks that keep your business running smoothly behind the scenes. I take pride in my commitment to excellence, ensuring that your back office operations are in capable hands, allowing you to focus on what you do best.</p>
                     <div className='flex flex-wrap gap-2'>
                         <div>
                             <div className='flex gap-1 items-center font-semibold'>
