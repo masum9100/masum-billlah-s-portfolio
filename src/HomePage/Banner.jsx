@@ -19,7 +19,7 @@ const Banner = () => {
                     </div>
 
                     <div className="navbar-end">
-                        <NavLink to={'/projects'}><button className='bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white '>Projects</button></NavLink>
+                        <NavLink to={'/projects'}><button className='bg-[#D26E3C] text-white font-semibold text-xl py-2 px-5 rounded-lg hover:text-[#D26E3C] hover:bg-white '>Projects</button></NavLink>
                     </div>
                 </div>
             </div>
@@ -36,13 +36,13 @@ const Banner = () => {
                         Where Imagination Meets Innovation</p>
                     <div className='md:flex justify-end space-x-10 pb-2'>
                         <a href="./Masum-Billlah's-Professional-CV-Resume.pdf" download>
-                            <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
+                            <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-semibold text-xl py-2 px-5 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
                                 <FaCloudDownloadAlt></FaCloudDownloadAlt>
                                 <p>Download CV</p>
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/masum-billah-0a38b915b/" target='_blank'>
-                            <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-bold text-xl py-2 px-3 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
+                            <div className='flex items-center space-x-1 bg-[#D26E3C] text-white font-semibold text-xl py-2 px-5 rounded-lg hover:text-[#D26E3C] hover:bg-white'>
                                 <FaLinkedin></FaLinkedin>
                                 <p>LinkedIn</p>
                             </div>
