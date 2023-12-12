@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly", "bounce"]
+import MovingText from 'react-moving-text'
 
 const Experiences = () => {
+
+    const [animationIndex, setAnimationIndex] = useState(0)
+    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
+
+    const handleChainAnimation = () => {
+        setCounter(animationIndex + 1)
+        setAnimationType(selectedItems[animationIndex + 1])
+    }
+
+
     return (
         <div className='my-16'>
             <div className='' style={{
@@ -12,7 +24,15 @@ const Experiences = () => {
 
                     <div className='py-2'>
                         <p className='text-xl mb-1'>EXPERIENCES</p>
+                        
+                        <MovingText
+                        onAnimationEnd={handleChainAnimation}
+                        type="bounce"
+                        duration="5000ms"
+                        timing="linear"
+                        iteration={1}>
                         <p className='text-2xl font-bold'>Companies Where I Worked</p>
+                    </MovingText>
                     </div>
                 </div>
             </div>

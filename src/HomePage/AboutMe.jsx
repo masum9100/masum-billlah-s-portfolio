@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import MovingText from 'react-moving-text'
+
+const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly", "bounce"]
 
 const AboutMe = () => {
+
+    const [animationIndex, setAnimationIndex] = useState(0)
+    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
+
+    const handleChainAnimation = () => {
+        setCounter(animationIndex + 1)
+        setAnimationType(selectedItems[animationIndex + 1])
+    }
+
+
     return (
         <div className='my-16'>
             <div className='' style={{
@@ -13,7 +26,15 @@ const AboutMe = () => {
 
                     <div className='py-2'>
                         <p className='text-xl mb-1'>ABOUT</p>
+                        
+                        <MovingText
+                        onAnimationEnd={handleChainAnimation}
+                        type="bounce"
+                        duration="5000ms"
+                        timing="linear"
+                        iteration={1}>
                         <p className='text-2xl font-bold'>How I Ended Up Here</p>
+                    </MovingText>
                     </div>
                 </div>
             </div>

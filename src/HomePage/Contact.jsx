@@ -1,10 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import MovingText from 'react-moving-text'
+const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly", "bounce"]
 
 const Contact = () => {
 
     const form = useRef();
+
+    const [animationIndex, setAnimationIndex] = useState(0)
+    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
+
+    const handleChainAnimation = () => {
+        setCounter(animationIndex + 1)
+        setAnimationType(selectedItems[animationIndex + 1])
+    }
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -37,7 +48,14 @@ const Contact = () => {
 
                     <div className='py-2'>
                         <p className='text-xl mb-1'>CONTACT</p>
+                        <MovingText
+                        onAnimationEnd={handleChainAnimation}
+                        type="bounce"
+                        duration="5000ms"
+                        timing="linear"
+                        iteration={1}>
                         <p className='text-2xl font-bold'>Write a Quick Message</p>
+                    </MovingText>
                     </div>
                 </div>
             </div>

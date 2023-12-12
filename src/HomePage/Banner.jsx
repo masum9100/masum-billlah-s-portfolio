@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLinkedin } from "react-icons/fa6";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import MovingText from 'react-moving-text'
+
+const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly"]
 
 
 const Banner = () => {
+
+    const [animationIndex, setAnimationIndex] = useState(0)
+    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
+
+    const handleChainAnimation = () => {
+        setCounter(animationIndex + 1)
+        setAnimationType(selectedItems[animationIndex + 1])
+    }
+
+
     return (
         <div className='' style={{
             backgroundImage: 'linear-gradient(135deg, #010101c1, #0202026e), url("https://i.ibb.co/hd2zGrd/hero-bg.png")',
@@ -31,7 +44,15 @@ const Banner = () => {
                 </div>
                 <div className='text-center md:text-right space-y-10'>
                     <p className='text-3xl text-white'>Hi ! I'm a Web Developer</p>
-                    <p className='text-5xl md:text-5xl lg:text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
+                    
+                    <MovingText
+                        onAnimationEnd={handleChainAnimation}
+                        type="bounce"
+                        duration="5000ms"
+                        timing="linear"
+                        iteration={1}>
+                        <p className='text-5xl md:text-5xl lg:text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
+                    </MovingText>
                     <p className='text-xl text-[#D26E3C]'>Transforming Dreams into Digital Reality <br />
                         Where Imagination Meets Innovation</p>
                     <div className='md:flex justify-end space-x-10 pb-2'>

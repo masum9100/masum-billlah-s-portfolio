@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import ProgressBar from "@ramonak/react-progress-bar";
@@ -7,8 +7,20 @@ import { FaReact } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiWebflow } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
+const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly", "bounce"]
+import MovingText from 'react-moving-text'
 
 const Skills = () => {
+
+    const [animationIndex, setAnimationIndex] = useState(0)
+    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
+
+    const handleChainAnimation = () => {
+        setCounter(animationIndex + 1)
+        setAnimationType(selectedItems[animationIndex + 1])
+    }
+
+
     return (
         <div className='my-16'>
             <div className='' style={{
@@ -20,7 +32,15 @@ const Skills = () => {
 
                     <div className='py-2'>
                         <p className='text-xl mb-1'>SKILLS</p>
+                        
+                        <MovingText
+                        onAnimationEnd={handleChainAnimation}
+                        type="bounce"
+                        duration="5000ms"
+                        timing="linear"
+                        iteration={1}>
                         <p className='text-2xl font-bold'>The Path of a Samurai</p>
+                    </MovingText>
                     </div>
                 </div>
             </div>
