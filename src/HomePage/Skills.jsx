@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import ProgressBar from "@ramonak/react-progress-bar";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiWebflow } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
-const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly", "bounce"]
-import MovingText from 'react-moving-text'
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
+import ProgressBar from '@ramonak/react-progress-bar';
 
 const SkillBox = ({ title, description, icon, completed }) => {
     // Use intersection observer to detect when the component is in view
@@ -27,7 +24,7 @@ const SkillBox = ({ title, description, icon, completed }) => {
                 opacity: 1,
                 scale: 1,
             });
-        }else {
+        } else {
             // Reset animation when out of view
             controls.start({
                 opacity: 0,
@@ -75,42 +72,35 @@ const Skills = () => {
 
 
 
-    const [animationIndex, setAnimationIndex] = useState(0)
-    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
-
-    const handleChainAnimation = () => {
-        setCounter(animationIndex + 1)
-        setAnimationType(selectedItems[animationIndex + 1])
-    }
 
 
     return (
         <div className='my-16'>
-            <div className='' style={{
-                backgroundImage: "url(https://i.ibb.co/h19VqSC/SKIL-BG.png)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}>
-                <div className='max-w-screen-xl mx-auto px-2'>
+            <motion.div className="box"
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}>
+                <div className='' style={{
+                    backgroundImage: "url(https://i.ibb.co/h19VqSC/SKIL-BG.png)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}>
+                    <div className='max-w-screen-xl mx-auto px-2'>
 
-                    <div className='py-2'>
-                        <p className='text-xl mb-1'>SKILLS</p>
+                        <div className='py-2 text-center'>
+                            <p className='text-xl mb-1'>SKILLS</p>
 
-                        <MovingText
-                            onAnimationEnd={handleChainAnimation}
-                            type="bounce"
-                            duration="5000ms"
-                            timing="linear"
-                            iteration={1}>
                             <p className='text-2xl font-bold'>The Path of a Samurai</p>
-                        </MovingText>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+
+            </motion.div>
+
             <div className='max-w-screen-xl mx-auto px-2 grid md:grid-cols-2 lg:grid-cols-3 justify-between gap-10 mt-10'>
 
                 <SkillBox title="Html / Css" description="The building blocks of the web. HTML provides foundational structure, while CSS enhances visual and stylistic appearance." icon={<FaHtml5 className='text-xl'></FaHtml5>
-                    } completed={98} />
+                } completed={98} />
 
                 {/* html skill */}
                 <SkillBox title="JavaScript" description="The backbone of dynamic web development. Enables client-side scripting, interactivity, and responsive design." icon={<IoLogoJavascript className='text-xl'></IoLogoJavascript>} completed={80} />

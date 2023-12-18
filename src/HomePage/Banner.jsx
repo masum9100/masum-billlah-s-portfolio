@@ -51,7 +51,7 @@ const Banner = () => {
                         type="bounce"
                         duration="5000ms"
                         timing="linear"
-                        iteration={1}>
+                        iteration={20}>
                         <p className='text-5xl md:text-5xl lg:text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
                     </MovingText>
                     

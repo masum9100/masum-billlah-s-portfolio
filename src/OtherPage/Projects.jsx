@@ -16,7 +16,7 @@ const Projects = () => {
             <div className='max-w-screen-xl mx-auto mt-16'>
 
                 <div className='max-w-screen-xl mx-auto'>
-                    <h1 class="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Take A Glimpse At My Finest Works</h1>
+                    <h1 class="mb-4 text-2xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-6xl dark:text-white">Take A Glimpse At My Finest Works</h1>
                     <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 text-center">Check out some featured projects I completed with absolute perfection. Many more astonishing projects are yet to be displayed from my repository.</p>
 
                     <div className='flex justify-center'>
@@ -25,9 +25,9 @@ const Projects = () => {
                 </div>
                 {/* projects */}
 
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 justify-between gap-10'>
+                <div className='mx-auto grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-2 md:gap-5 lg:gap-10 px-5'>
                     {/* one card */}
-                    <div className='w-96 shadow-md shadow-[#D26E3C] my-16 hover:scale-125 transition-all duration-500'>
+                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] mt-16 md:mt-5 hover:scale-125 transition-all duration-500'>
                         <NavLink to={'/nexawave-tech'}><img src="https://i.ibb.co/m5WPZzw/nextc.jpg" alt="" className='' /></NavLink>
                         <div className='flex justify-between items-center px-2 py-5'>
                             <div>
@@ -40,7 +40,7 @@ const Projects = () => {
                         </div>
                     </div>
                     {/* 2nd card */}
-                    <div className='w-96 shadow-md shadow-[#D26E3C] my-16 hover:scale-125 transition-all duration-500'>
+                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] my-5 hover:scale-125 transition-all duration-500'>
                         <NavLink to={'/pest-control'}><img src="https://i.ibb.co/NT0byQd/pestc.jpg" alt="" className='' /></NavLink>
                         <div className='flex justify-between items-center px-2 py-5'>
                             <div>
@@ -53,7 +53,7 @@ const Projects = () => {
                         </div>
                     </div>
                     {/* 3rd card */}
-                    <div className='w-96 shadow-md shadow-[#D26E3C] my-16 hover:scale-125 transition-all duration-500'>
+                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] mb-16 hover:scale-125 transition-all duration-500'>
                         <NavLink to={'/khulna-times'}><img src="https://i.ibb.co/sjq3SgH/khulnat.jpg" alt="" className='' /></NavLink>
                         <div className='flex justify-between items-center px-2 py-5'>
                             <div>

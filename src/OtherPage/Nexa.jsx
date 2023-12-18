@@ -52,8 +52,8 @@ const Nexa = () => {
                 <a href="https://nexawave-1d00b.web.app/" target='_blank' className='bg-[#D26E3C] text-white font-semibold text-xl py-2 px-5 rounded-lg hover:text-[#D26E3C] hover:bg-white '>Live Demo</a>
                 <a href="https://github.com/masum9100/NexaWave-Technologies" target='_blank' className='bg-[#D26E3C] text-white font-semibold text-xl py-2 px-5 rounded-lg hover:text-[#D26E3C] hover:bg-white '>GitHub Repo</a>
             </div>
-            <div className='mx-auto w-full max-w-screen-xl px-2 flex justify-between mt-16'>
-                <div className='w-2/3'>
+            <div className='mx-auto w-full max-w-screen-xl px-2 grid md:flex justify-between mt-16'>
+                <div className='w-full md:w-2/3'>
                     <p className='text-2xl font-semibold mb-10'>Project Features</p>
                     <div className='flex gap-2 items-center px-5 mb-5'>
                         <p className='text-3xl text-[#D26E3C]'><FaArrowRight></FaArrowRight></p>
@@ -81,44 +81,44 @@ const Nexa = () => {
                     </div>
 
                 </div>
-                <div className='w-1/3 '>
+                <div className='w-full md:w-1/3 '>
                     <p className='text-2xl font-semibold mb-10'>Technology I used</p>
                     <div className='flex flex-wrap gap-8 px-5'>
                         <div>
                             <p className='text-5xl text-[#DD4B25]'><FaHtml5></FaHtml5></p>
-                            <p className='text-3xl text-gray-500 font-bold'>HTML</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>HTML</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#254BDD]'><FaCss3Alt></FaCss3Alt></p>
-                            <p className='text-3xl text-gray-500 font-bold'>CSS</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>CSS</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#EBD54F]'><IoLogoJavascript></IoLogoJavascript></p>
-                            <p className='text-3xl text-gray-500 font-bold'>JavaScript</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>JavaScript</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#5ED3F3]'><FaReact></FaReact></p>
-                            <p className='text-3xl text-gray-500 font-bold'>React</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>React</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#EE7E0C]'><IoLogoFirebase></IoLogoFirebase></p>
-                            <p className='text-3xl text-gray-500 font-bold'>Firebase</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>Firebase</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#37B8F0]'><BiLogoTailwindCss></BiLogoTailwindCss></p>
-                            <p className='text-3xl text-gray-500 font-bold'>TailwindCSS</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>TailwindCSS</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#4DA53F]'><SiMongodb></SiMongodb></p>
-                            <p className='text-3xl text-gray-500 font-bold'>MongoDB</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>MongoDB</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#00000]'><SiNextdotjs></SiNextdotjs></p>
-                            <p className='text-3xl text-gray-500 font-bold'>Next.js</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>Next.js</p>
                         </div>
                         <div>
                             <p className='text-5xl text-[#7DC521]'><FaNodeJs></FaNodeJs></p>
-                            <p className='text-3xl text-gray-500 font-bold'>Node.js</p>
+                            <p className='text-xl md:text-3xl text-gray-500 font-bold'>Node.js</p>
                         </div>
                     </div>
 

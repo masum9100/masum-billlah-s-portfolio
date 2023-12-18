@@ -1,20 +1,12 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import MovingText from 'react-moving-text'
-const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly", "bounce"]
-
+import { motion } from "framer-motion";
 const Contact = () => {
 
     const form = useRef();
 
-    const [animationIndex, setAnimationIndex] = useState(0)
-    const [animationType, setAnimationType] = useState(AnimationsForChaining[0])
-
-    const handleChainAnimation = () => {
-        setCounter(animationIndex + 1)
-        setAnimationType(selectedItems[animationIndex + 1])
-    }
+    
 
 
     const sendEmail = (e) => {
@@ -29,36 +21,37 @@ const Contact = () => {
                     title: "Thanks For Your Message",
                     showConfirmButton: false,
                     timer: 1500
-                  });
-                  form.current.reset();
+                });
+                form.current.reset();
             }, (error) => {
                 console.log(error.text);
-                
+
             });
     };
 
     return (
         <div className='my-16'>
-            <div className='' style={{
-                backgroundImage: "url(https://i.ibb.co/x5J9tr9/contact-bg.png)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}>
-                <div className='max-w-screen-xl mx-auto px-2'>
+            <motion.div className="box"
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}>
 
-                    <div className='py-2'>
-                        <p className='text-xl mb-1'>CONTACT</p>
-                        <MovingText
-                        onAnimationEnd={handleChainAnimation}
-                        type="bounce"
-                        duration="5000ms"
-                        timing="linear"
-                        iteration={1}>
-                        <p className='text-2xl font-bold'>Write a Quick Message</p>
-                    </MovingText>
+                <div className='' style={{
+                    backgroundImage: "url(https://i.ibb.co/x5J9tr9/contact-bg.png)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}>
+                    <div className='max-w-screen-xl mx-auto px-2'>
+
+                        <div className='py-2 text-center'>
+                            <p className='text-xl mb-1'>CONTACT</p>
+
+                            <p className='text-2xl font-bold'>Write a Quick Message</p>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
+
             {/*  */}
             <div className='max-w-screen-xl mx-auto w-ful lg:flex justify-between items-center gap-20 px-2 space-y-5 mt-10'>
                 <div className='lg:w-1/2'>
