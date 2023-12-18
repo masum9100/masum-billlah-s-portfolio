@@ -4,6 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import MovingText from 'react-moving-text'
 
+
 const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly"]
 
 
@@ -53,6 +54,8 @@ const Banner = () => {
                         iteration={1}>
                         <p className='text-5xl md:text-5xl lg:text-7xl text-white font-bold' style={{ textShadow: '0px 5px 15px #dd8560' }}>Masum Billah</p>
                     </MovingText>
+                    
+                    
                     <p className='text-xl text-[#D26E3C]'>Transforming Dreams into Digital Reality <br />
                         Where Imagination Meets Innovation</p>
                     <div className='md:flex justify-end space-x-10 pb-2'>
