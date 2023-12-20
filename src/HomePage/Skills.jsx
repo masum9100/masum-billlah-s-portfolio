@@ -13,7 +13,7 @@ const SkillBox = ({ title, description, icon, completed }) => {
     // Use intersection observer to detect when the component is in view
     const [ref, inView] = useInView({
         triggerOnce: false, // Only trigger once
-        threshold: 0.2, // Trigger animation when 20% of the component is visible
+        threshold: 0.5, // Trigger animation when 20% of the component is visible
     });
 
     const controls = useAnimation();
@@ -34,6 +34,9 @@ const SkillBox = ({ title, description, icon, completed }) => {
     }, [controls, inView]);
 
     return (
+
+        
+        
         <motion.div
             ref={ref}
             className="box"

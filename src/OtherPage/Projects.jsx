@@ -25,9 +25,9 @@ const Projects = () => {
                 </div>
                 {/* projects */}
 
-                <div className='mx-auto grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-2 md:gap-5 lg:gap-10 px-5'>
+                <div className='mx-auto grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-2 md:gap-5 lg:gap-10 px-5 mt-16'>
                     {/* one card */}
-                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] mt-16 md:mt-5 hover:scale-125 transition-all duration-500'>
+                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] my-10 md:mt-5 hover:scale-125 transition-all duration-500'>
                         <NavLink to={'/nexawave-tech'}><img src="https://i.ibb.co/m5WPZzw/nextc.jpg" alt="" className='' /></NavLink>
                         <div className='flex justify-between items-center px-2 py-5'>
                             <div>
@@ -40,7 +40,7 @@ const Projects = () => {
                         </div>
                     </div>
                     {/* 2nd card */}
-                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] my-5 hover:scale-125 transition-all duration-500'>
+                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] my-10 hover:scale-125 transition-all duration-500'>
                         <NavLink to={'/pest-control'}><img src="https://i.ibb.co/NT0byQd/pestc.jpg" alt="" className='' /></NavLink>
                         <div className='flex justify-between items-center px-2 py-5'>
                             <div>
@@ -53,7 +53,7 @@ const Projects = () => {
                         </div>
                     </div>
                     {/* 3rd card */}
-                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] mb-16 hover:scale-125 transition-all duration-500'>
+                    <div className='w-96 md:w-80 lg:w-96 shadow-md shadow-[#D26E3C] my-10 hover:scale-125 transition-all duration-500'>
                         <NavLink to={'/khulna-times'}><img src="https://i.ibb.co/sjq3SgH/khulnat.jpg" alt="" className='' /></NavLink>
                         <div className='flex justify-between items-center px-2 py-5'>
                             <div>

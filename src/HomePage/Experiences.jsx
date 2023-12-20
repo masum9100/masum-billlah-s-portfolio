@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Experiences = () => {
 
-    
+
 
 
     return (
@@ -33,8 +33,11 @@ const Experiences = () => {
             <div className='max-w-screen-xl mx-auto px-2 mt-10 space-y-10'>
                 {/*  */}
                 <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
-                    <div>
-                        <p className='text-3xl font-bold'>Executive Officer <span className='text-sm font-bold text-[#D26E3C]'>/VirGenius Inc.</span></p>
+
+                    
+                    <div className='flex justify-start items-baseline gap-3'>
+                        <p className='text-3xl font-bold'>Executive Officer</p>
+                        <a href="https://www.virgenius.com/" target='_blank'><p className='text-sm font-bold text-[#D26E3C] animate-bounce'>-VirGenius Inc.</p></a>
                     </div>
                     <div>
                         <p className='text-2xl'>Jan 2022-Present</p>
@@ -42,8 +45,9 @@ const Experiences = () => {
                 </div>
                 {/*  */}
                 <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
-                    <div>
-                        <p className='text-3xl font-bold'>Sr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'>/VirGenius Inc.</span></p>
+                    <div className='flex justify-start items-baseline gap-3'>
+                        <p className='text-3xl font-bold'>Sr. Executive Assistant</p>
+                        <a href="https://www.virgenius.com/" target='_blank'><p className='text-sm font-bold text-[#D26E3C] animate-bounce'>-VirGenius Inc.</p></a>
                     </div>
                     <div>
                         <p className='text-2xl'>Nov 2019-Dec 2022</p>
@@ -51,8 +55,9 @@ const Experiences = () => {
                 </div>
                 {/*  */}
                 <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
-                    <div>
-                        <p className='text-3xl font-bold'>Jr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'>/VirGenius Inc.</span></p>
+                    <div className='flex justify-start items-baseline gap-3'>
+                        <p className='text-3xl font-bold'>Jr. Executive Assistant</p>
+                        <a href="https://www.virgenius.com/" target='_blank'><p className='text-sm font-bold text-[#D26E3C] animate-bounce'>-VirGenius Inc.</p></a>
                     </div>
                     <div>
                         <p className='text-2xl'>Dec 2017-Oct 2019</p>
@@ -60,8 +65,9 @@ const Experiences = () => {
                 </div>
                 {/*  */}
                 <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
-                    <div>
-                        <p className='text-3xl font-bold'>Jr. Executive Assistant <span className='text-sm font-bold text-[#D26E3C]'> /Stylish Garments</span></p>
+                    <div className='flex justify-start items-baseline gap-3'>
+                        <p className='text-3xl font-bold'>Executive Assistant</p>
+                        <a href="https://www.facebook.com/StylishGarmentsLimited/" target='_blank'><p className='text-sm font-bold text-[#D26E3C] animate-bounce'>-Stylish Garments</p></a>
                     </div>
                     <div>
                         <p className='text-2xl'>Mar 2019-May 2019</p>
@@ -69,8 +75,9 @@ const Experiences = () => {
                 </div>
                 {/*  */}
                 <div className='flex justify-between border-b-2 border-[#D26E3C] pb-5'>
-                    <div>
-                        <p className='text-3xl font-bold'>Success Coach <span className='text-sm font-bold text-[#D26E3C]'>/Empower</span></p>
+                    <div className='flex justify-start items-baseline gap-3'>
+                        <p className='text-3xl font-bold'>Success Coach</p>
+                        <a href="https://www.empower.com/" target='_blank'><p className='text-sm font-bold text-[#D26E3C] animate-bounce'>-Empower.com</p></a>
                     </div>
                     <div>
                         <p className='text-2xl'>Aug 2018-Mar 2019</p>
